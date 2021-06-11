@@ -1,6 +1,5 @@
 import React from 'react';
-
-
+import { Link } from 'react-router-dom';
 
 const  Sign= ()=>{
     return(
@@ -35,11 +34,13 @@ const  Sign= ()=>{
                 <div className="button">
                     <button>Create Account</button>
                 </div>
-                <h5>Already have an account? Log in</h5>
-
-
+                <p>
+                    Already have an account? 
+                    <Link to=".\Login.jsx">
+                            Log in
+                    </Link>
+                </p>
             </form>
-
         </div>
         </>
     )

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 
 const  Log=()=> {
@@ -22,7 +23,10 @@ const  Log=()=> {
                 </div>
             </form>
             <div className="last">
-                <h5>Don't have an account?Sign Up</h5>
+                <h5>Don't have an account?
+                
+                <Link to='.\Singup'>Sign Up</Link>
+                </h5>
             </div>
 
         </div>
