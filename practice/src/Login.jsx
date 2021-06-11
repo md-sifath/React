@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './App.css';
 
 
-function Log() {
+const  Log=()=> {
     return (
         <>
         <div className="main_div">

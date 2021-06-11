@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-function Sign(){
+const  Sign= ()=>{
     return(
         <>
         <div className="main_div">
@@ -40,14 +40,7 @@ function Sign(){
 
             </form>
 
-
-
-
-
         </div>
-
-
-
         </>
     )
 }
