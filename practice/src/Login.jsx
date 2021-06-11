@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.css';
+import './App.css';
+
+
 function Log() {
     return (
         <>
@@ -8,11 +10,11 @@ function Log() {
             <h1 className="header">LOG IN</h1>
             <form>
                 <div className="row">
-                    <input type="text"/>
+                    <input type="text" required/>
                     <label>Username</label>
                 </div>
                 <div className="row">
-                    <input type="Password" />
+                    <input type="Password" required />
                     <label>Password</label>
                 </div>
                 <div className="button">

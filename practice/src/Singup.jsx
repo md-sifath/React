@@ -1,6 +1,7 @@
 import React from 'react';
 
 
+
 function Sign(){
     return(
         <>
@@ -9,28 +10,32 @@ function Sign(){
             <form>
                 <div className="row_1">
                     <div className="col_1">
-                        <input type="text" name="fname"/>
+                        <input type="text" name="fname" required/>
                         <label>First Name</label>
                     </div>
-                    <div className="col_1">
-                        <input type="text" name="lname"/>
-                        <label>Lirst Name</label>
+                    <div className="col_2">
+                        <input type="text" name="lname" required/>
+                        <label>Last Name</label>
                     </div>
                 </div>
 
                 <div className="row">
-                    <input type="email"/>
+                    <input type="email" required/>
                     <label>Enter email</label>
                 </div>
                 
                 <div className="row">
-                    <input type="password"/>
+                    <input type="password" required/>
                     <label>Password</label>
+                </div>
+                <div className="check_box">
+                    <input type="checkbox"/>
+                    <label>I agree to all term & condition</label>
                 </div>
                 <div className="button">
                     <button>Create Account</button>
                 </div>
-
+                <h5>Already have an account? Log in</h5>
 
 
             </form>

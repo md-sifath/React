@@ -4,7 +4,9 @@ import Log from './Login';
 import Sign from './Singup';
 
 ReactDOM.render(
-  <Sign/>,
+  <>
+  <Sign/>
+  </>,
   document.getElementById('root')
 );
 

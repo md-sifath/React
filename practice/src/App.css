@@ -19,6 +19,7 @@ body{
     padding: 60px 40px;
 }
 .header{
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 40px;
     margin-bottom: 40px;
     background: magenta;
@@ -36,6 +37,7 @@ body{
     padding-left: 15px;
     outline: none;
     font-size: 16px;
+    transition: .4s;
 }
 input:focus{
     border: 1px solid #00cdac;
@@ -50,15 +52,7 @@ input:focus{
     font-size: 18px;
     transition: .4s;
 }
-input:focus ~ label,
-input:valid ~ label
 
-{
-    transform: translateY(-30px);
-    background: ghostwhite;
-    font-size: 16px;
-    color: #1DA1F2;
-}
 form .button{
     margin-top: 40px;
 }
@@ -74,7 +68,6 @@ form .button{
 .button button:hover{
     transition: .4s;
     background: linear-gradient(to right, rgb(161, 13, 13),rgba(11, 11, 145, 0.705),violet);
-    transition: .6s;
 }
 .last{
     font-size: 22px;
@@ -87,12 +80,49 @@ form .button{
     position: relative;
     margin-top:25px;
 }
- .col_1 input{
+
+.row_1 input{
+    position: relative;
     height: 45px;
+    width: 98%;
     border: 1px solid silver;
-    outline: none;
+    outline:none;
     padding-left: 15px;
 }
-input:focus{
-    border: 1px solid silver;
+.col_1 input:focus{
+    border: 1px solid #00cdac;
+}
+ .row_1 label{
+    position: absolute;
+    top: 25%;
+    pointer-events: none;
+    color: gray;
+    font-size: 18px;
+    transition: .4s;
+}
+.col_1 label{
+    left: 15px;
+}
+.col_2 label{
+    right: 65px;
+}
+
+.row_1 input:focus ~label,
+input:valid~label{
+    transform: translateY(-20px);
+}
+
+
+input:focus ~ label,
+input:valid ~ label
+{
+    transform: translateY(-30px);
+    background: ghostwhite;
+    font-size: 16px;
+    color: #1DA1F2;
+}
+h5{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
 }
