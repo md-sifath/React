@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding: 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: rgba(47, 79, 79, 0.562);
+}
+.main_div{
+    position: relative;
+    width: 400px;
+    background: ghostwhite;
+    padding: 60px 40px;
+}
+.header{
+    font-size: 40px;
+    margin-bottom: 40px;
+    background: magenta;
+}
+.row, form .button{
+    margin: 25px 0;
+    position: relative;
+    height: 45px;
+    width: 100%;
+}
+.row input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid silver;
+    padding-left: 15px;
+    outline: none;
+    font-size: 16px;
+}
+input:focus{
+    border: 1px solid #00cdac;
+}
+.row label{
+    position:absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: gray;
+    font-size: 18px;
+    transition: .4s;
+}
+input:focus ~ label,
+input:valid ~ label
+
+{
+    transform: translateY(-30px);
+    background: ghostwhite;
+    font-size: 16px;
+    color: #1DA1F2;
+}
+form .button{
+    margin-top: 40px;
+}
+.button button{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    background: linear-gradient(to left, rgb(161, 13, 13),rgba(11, 11, 145, 0.705),violet);
+    margin-top: 10px;
+    color:white;
+    cursor: pointer;
+}
+.button button:hover{
+    transition: .4s;
+    background: linear-gradient(to right, rgb(161, 13, 13),rgba(11, 11, 145, 0.705),violet);
+    transition: .6s;
+}
+.last{
+    font-size: 22px;
+}
+.last h5{
+    padding-top: 22px;
+}
+.row_1{
+    display: flex;
+    position: relative;
+    margin-top:25px;
+}
+ .col_1 input{
+    height: 45px;
+    border: 1px solid silver;
+    outline: none;
+    padding-left: 15px;
+}
+input:focus{
+    border: 1px solid silver;
+}
