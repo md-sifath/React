@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 
-const  Log=()=> {
+const  Login=()=> {
     return (
         <>
         <div className="main_div">
@@ -25,7 +25,9 @@ const  Log=()=> {
             <div className="last">
                 <h5>Don't have an account?
                 
-                <Link to='.\Singup'>Sign Up</Link>
+                <Link to='/singup'>
+                    Sign Up
+                </Link>
                 </h5>
             </div>
 
@@ -37,4 +39,4 @@ const  Log=()=> {
         </>
     )
 }
-export default Log;
+export default Login;

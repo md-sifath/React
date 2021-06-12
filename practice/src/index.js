@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Log from './Login';
-import Sign from './Singup';
+import App from './App';
 import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
   <>
-  <Sign/>
+    <BrowserRouter>
+      <App/>
+    </BrowserRouter>
   </>,
   document.getElementById('root')
 );

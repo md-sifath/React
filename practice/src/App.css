@@ -19,10 +19,9 @@ body{
     padding: 60px 40px;
 }
 .header{
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 40px;
+    font-size:30px;
     margin-bottom: 40px;
-    background: magenta;
+    background: linear-gradient(to right, #C20ED0,#5FFAE0);
 }
 .row, form .button{
     margin: 25px 0;
@@ -60,14 +59,14 @@ form .button{
     width: 100%;
     height: 100%;
     font-size: 20px;
-    background: linear-gradient(to left, rgb(161, 13, 13),rgba(11, 11, 145, 0.705),violet);
+    background: linear-gradient(to left, #C20ED0,#5FFAE0);
     margin-top: 10px;
     color:white;
     cursor: pointer;
 }
 .button button:hover{
+    background: linear-gradient(to right, #C20ED0,#5FFAE0);
     transition: .4s;
-    background: linear-gradient(to right, rgb(161, 13, 13),rgba(11, 11, 145, 0.705),violet);
 }
 .last{
     font-size: 22px;
@@ -110,19 +109,24 @@ form .button{
 .row_1 input:focus ~label,
 input:valid~label{
     transform: translateY(-20px);
+    background: ghostwhite;
+    font-size: 16px;
+    color: #1DA1F2;
 }
 
 
-input:focus ~ label,
-input:valid ~ label
+.row input:focus ~ label,
+.row input:valid ~ label
 {
     transform: translateY(-30px);
     background: ghostwhite;
     font-size: 16px;
     color: #1DA1F2;
 }
+
+h1{
+    background: linear-gradient(to right, #C20ED0,#5FFAE0);
+}
 h5{
-    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 18px;
-    font-weight: lighter;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const  Sign= ()=>{
+const  Signup= ()=>{
     return(
         <>
         <div className="main_div">
@@ -34,16 +34,16 @@ const  Sign= ()=>{
                 <div className="button">
                     <button>Create Account</button>
                 </div>
-                <p>
+                <h5>
                     Already have an account? 
-                    <Link to=".\Login.jsx">
-                            Log in
+                    <Link to="/login">
+                            Log in 
                     </Link>
-                </p>
+                </h5>
             </form>
         </div>
         </>
     )
 }
 
-export default Sign;
+export default Signup;
